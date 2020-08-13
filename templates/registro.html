@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="contenedor-form">
+    <div class="toggle">
+        <form action="/">
+            <input type="submit" value="Ingreso">
+        </form>
+    </div>
+        
+    <div class="formulario">
+        <h2>Crear una nueva cuenta</h2>
+        <form action="/">
+            <input type="text" placeholder="Cédula/Pasaporte" required>
+                        
+            <input type="email" placeholder="Correo Electronico" required>
+
+            <input type="password" placeholder="Contraseña" required>
+            
+            <input type="password" placeholder="Confirmar contraseña:" required>
+            
+            <input type="submit" value="Crear usuario">
+        </form>
+    </div>
+</div>
+{% endblock %}
